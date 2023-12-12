@@ -77,3 +77,15 @@ function sendMail(){
    )
    .catch((err)=> console.log(err));
 }
+
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                },
+            })
+        })
