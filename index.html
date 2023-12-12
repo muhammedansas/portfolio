@@ -227,24 +227,6 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 	<script defer src="main.js"></script>
-     <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                // url:"https://script.google.com/macros/s/AKfycbzkTTSk7ZLULyOZYC2JytBbB3oF06SLB4DE53Iv76O5BAmucKADJrzKd4oeQq1Vd74t/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                },
-                // error:function (err){
-                //     alert("Something Error")
-    
-                // }
-            })
-        })
-    </script> 
     <script src="main.js"></script>
 </body>
 </html>
